@@ -1,0 +1,20 @@
+Package: TOMRwModule
+Title: TOMRwModule: Module identification in network by incorporating additional numeric attribute of vertices
+Version: 0.0.0.9000
+Authors@R: person("Zhisong", "He", email = "zhisong.he@gmail.com", role = c("aut", "cre"))
+Description: An implementation of module detection procedure in network based on Topological
+	Overlap Matrix (TOM), which in addition incorporates with numeric attribute of vertices
+	(represented as vertex heat) by assigning edge weight as the heat similarity of linked
+	vertices. Heat diffusion (random walk) is implemented to smoothen heat difference of
+	neighboring vertices to reduce noise. The method was initially designed to analyze human
+	protein-protein interaction (PPI) network to identify functional modules which are related
+	to neuron maturation. Heat of each vertex was represented as its expression level difference
+	between mature and immature neurons.
+Depends: R (>= 3.2.4)
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+Imports:
+	WGCNA,
+	igraph
+RoxygenNote: 6.0.1
